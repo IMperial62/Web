@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Pomodoro</title>
+  <link rel="stylesheet" href="todo_fomodoro.css"> 
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- 왼쪽 ToDo -->
+    <section class="todo-panel">
+      <h2>ToDo List</h2>
+
+      <ul id="scheduleList"></ul>
+    </section>
+
+    <!-- 오른쪽 메인 -->
+    <section class="main-panel">
+
+      <!-- 타이머 영역 -->
+      <div class="timer-area">
+        <div class="timer-wrap">
+          <p id="timerMode">집중!</p>
+
+          <div class="circle-timer">
+            <span id="timer">25:00</span>
+          </div>
+        </div>
+
+        <div class="current-task">
+          <h3>현재 작업</h3>
+          <p id="selectedTask">선택된 일정 없음</p>
+          <button id="startBtn">START</button>
+          <button id="pauseBtn">STOP</button>
+          <button id="resetBtn">RESET</button>
+        </div>
+      </div>
+
+      <!-- 일정 관리 (넓게 사용) -->
+      <div class="schedule-box">
+        <h3>일정 관리</h3>
+
+        <div class="schedule-input">
+          <input type="time" id="timeInput">
+          <input type="text" id="scheduleInput" placeholder="일정 내용을 입력하세요">
+          <button id="addScheduleBtn">추가</button>
+        </div>    
+      </div>
+      
+      <div class="quote-box">
+        <p id="quote"></p>
+      </div>
+
+    </section>
+
+  </div>
+  <script src = "todo_fomodoro.js"></script>
+</body>
+</html>
